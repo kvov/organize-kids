@@ -1,0 +1,326 @@
+.wish-page__header {
+    background-color: #624DD6;
+    width: 100vw;
+    height: 50px;
+    background-image: linear-gradient(-180deg, #624DD6 0%, #624DD6 100%);
+    box-shadow: 0 1rem 1.75rem 0 rgba(22,75,195,0.50), 0 -0.25rem 1rem 
+                                 rgba(110, 15, 155, 1) inset, 0 0.75rem 0.5rem 
+                                 rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                                 #624DD6 inset;
+}
+
+.wish-page__header__back-arrow {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+.wish-page__header__user-name {
+    font-family: 'Nunito';
+    color: #FCE23C;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    text-shadow: 0px 0px 0 rgb(207,181,15),
+                 0px 1px 0 rgb(192,166,0),
+                 0px 2px  0 rgb(177,151,0),
+                 0px 3px 2px rgba(0,0,0,0.2),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2);
+}
+
+.wish-page__title {
+    color: #62C052;
+    font-family: 'Nunito';
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    text-shadow: 0px 0px 0 rgb(42,135,25),
+                 0px 1px 0 rgb(14,107,0),
+                 0px 2px  0 rgb(-13,80,0),
+                 0px 3px 2px rgba(0,0,0,0.45),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2); 
+}
+
+.wish-page__add-wish-button-div {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.wish-page__add-wish-button {
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #62C052;
+    color: #624DD6;
+    text-shadow: 0px 0px 0 rgb(89,68,205),
+                 0px 1px  0 rgb(80,59,196),
+                 0px 2px 1px rgba(0,0,0,0.21),
+                 0px 2px 1px rgba(0,0,0,0.5),
+                 0px 0px 1px rgba(0,0,0,.2);
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    outline: none;
+    /* margin-bottom: 10px; */
+    background-image: linear-gradient(-180deg, #62C052 0%, #62C052 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(8, 80, 8, 0.5), 0 -0.25rem 1.5rem 
+                                #62C052 inset, 0 0.75rem 0.5rem 
+                                 rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                                 rgb(70, 207, 123) inset;
+}
+.wish-page__add-wish-button a {
+    color: #624DD6;
+}
+.wish-modal {
+    background-color: #C4C4C4;
+    width: 100vw;
+    height: 308px; 
+    position: absolute;
+    border-radius: 15px; 
+    top: 104px;
+    left: 0;
+    padding-top: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 1;
+    overflow: hidden;
+    background: rgb(156, 156, 156) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+    box-shadow:
+    inset rgba(0,0,0,.6) 0 -3px 8px,
+    inset rgba(252,255,255,.7) 0 3px 8px,
+    rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.wish-title__modal-label, .wish-price__modal-label {
+    color: #624DD6;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 0 rgb(53,32,169),
+                 0px 1px 0 rgb(38,17,154),
+                 0px 2px  0 rgb(23,2,139),
+                 0px 3px 2px rgba(0,0,0,0.2),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2);  
+}
+
+.wish-title__modal-input, .wish-price__modal-input {
+    background-color: white;
+    padding-left: 10px;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    box-shadow:
+        inset 0 0 100px rgba(250, 249, 249, 0.2),
+        inset 0px 1px 5px #999,
+        inset 0px 2px 0px #888,
+        inset 0px 3px 0px #777,
+        inset 0px 4px 0px #666,
+        inset 0px 5px 0px #555,
+        inset 0px 6px 0px #444,
+        inset 0px 7px 0px #333,
+        inset 0px 8px 7px #001135;
+}
+
+.wish-modal__button-div {
+    width: 100%;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.wish-modal__save-wish-button {
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #62C052;
+    letter-spacing: 1.5px;
+    color: #FCE23C;
+    text-shadow: 0px 0px 0 rgb(207,181,15),
+                 0px 1px 0 rgb(192,166,0),
+                 0px 2px  0 rgb(177,151,0),
+                 0px 3px 2px rgba(0,0,0,0.2),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2);
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    background-image: linear-gradient(-180deg, #62C052 0%, #62C052 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(8, 80, 8, 0.5), 0 -0.25rem 1.5rem 
+                                #62C052 inset, 0 0.75rem 0.5rem 
+                                 rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                                 rgb(70, 207, 123) inset;  
+}
+
+.wish-modal__cancel-wish-button {
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #FCE23C;
+    letter-spacing: 1.5px;
+    color: #62C052;
+    text-shadow: 0px 0px 0 rgb(54,147,37),
+                 0px 1px 0 rgb(39,132,22),
+                 0px 2px  0 rgb(24,117,7),
+                 0px 3px 2px rgba(0,0,0,0.2),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2);
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    outline: none; 
+    background-image: linear-gradient(-180deg, #FCE23C 0%, #FCE23C 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(79, 80, 8, 0.5), 0 -0.25rem 1.5rem 
+                                #FCE23C inset, 0 0.75rem 0.5rem 
+                                 rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                                 #fcf9e6 inset; 
+}
+
+.congrats-modal {
+    width: 100vw;
+    height: 100vh; 
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+}
+.congrats-modal__text {
+    position: absolute;
+    width: 96%;
+    height: 88px;
+    left: 0;
+    top: 100px;
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 49px;
+    text-align: center;
+    color: #624DD6;
+    animation: neonAnim 1s alternate-reverse infinite;
+}
+
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 19px rgba(98, 77, 214, .7),
+          0 0 49px rgba(98, 77, 214, .7),
+          0 0 109px rgba(98, 77, 214, .7);
+      }
+      to {
+        text-shadow:
+          0 0 14px rgba(98, 77, 214, .7),
+          0 0 29px rgba(98, 77, 214, .7),
+          0 0 69px rgba(98, 77, 214, .7);
+      }
+}
+
+.wish-page__wish-list-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    
+}
+.wish-page__wish-list {
+    padding: 20px 0 0 25px;
+    margin-top: 30px;
+    height: 240px;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 -5px 5px -5px rgba(226, 226, 226, 0.5);
+}
+
+.wish-page__wish-list::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.wish-page__wish-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.wish-page__wish-list::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.wish-item-div {
+    display:flex;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+}
+.wish-item {
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #624DD6;
+    padding-top: 6px;
+    padding-bottom: 0;
+    width: 190px;
+    word-wrap: break-word;
+    text-shadow: 0px 0px 0 rgb(89,68,205),
+                 0px 1px  0 rgb(80,59,196),
+                 0px 2px 1px rgba(0,0,0,0.21),
+                 0px 2px 1px rgba(0,0,0,0.5),
+                 0px 0px 1px rgba(0,0,0,.2);
+}
+
+.wish-item__remove-from-list {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+}
+.wish-item__buy-wish {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 60px;
+    margin: 0;
+    padding: 0;
+}

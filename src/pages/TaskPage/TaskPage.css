@@ -1,0 +1,338 @@
+.task-page{
+    overflow: hidden;
+}
+.task-page__header {
+    background-color: #624DD6;
+    width: 100vw;
+    height: 50px;
+    background-image: linear-gradient(-180deg, #624DD6 0%, #624DD6 100%);
+    box-shadow: 0 1rem 1rem 0 rgba(22,75,195,0.50), 0 -0.25rem 1rem 
+                                 rgba(110, 15, 155, 1) inset, 0 0.75rem 0.5rem 
+                                 rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                                 #624DD6 inset;
+}
+
+.task-page__header__back-arrow {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+.task-page__header__user-name {
+    font-family: 'Nunito';
+    color: #FCE23C;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    text-shadow: 0px 0px 0 rgb(207,181,15),
+                 0px 1px 0 rgb(192,166,0),
+                 0px 2px  0 rgb(177,151,0),
+                 0px 3px 2px rgba(0,0,0,0.2),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2);
+}
+
+.task-page__title {
+    color: #624DD6;
+    font-family: 'Nunito';
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center; 
+    text-shadow: 0px 0px 0 rgb(53,32,169),
+                 0px 1px 0 rgb(38,17,154),
+                 0px 2px  0 rgb(23,2,139),
+                 0px 3px 2px rgba(0,0,0,0.5),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2);
+}
+
+.task-page__add-task-button-div {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.task-page__add-task-button {
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #FCE23C;
+    color: #624DD6;
+    text-shadow: 0px 0px 0 rgb(89,68,205),
+                 0px 1px  0 rgb(80,59,196),
+                 0px 2px 1px rgba(0,0,0,0.21),
+                 0px 2px 1px rgba(0,0,0,0.5),
+                 0px 0px 1px rgba(0,0,0,.2);
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    outline: none;
+    background-image: linear-gradient(-180deg, #FCE23C 0%, #FCE23C 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(140, 143, 104, 0.5), 0 -0.25rem 1.5rem 
+                                #FCE23C inset, 0 0.75rem 0.5rem 
+                                 rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                                 #f3f2eb inset;
+}
+.task-page__add-task-button a {
+    color: #624DD6;
+}
+.task-modal {
+    background-color: #C4C4C4;
+    width: 100vw;
+    height: 308px; 
+    position: absolute;
+    border-radius: 15px; 
+    top: 104px;
+    left: 0;
+    padding-top: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 1;
+    overflow: hidden;
+    background: rgb(156, 156, 156) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+    box-shadow:
+    inset rgba(0,0,0,.6) 0 -3px 8px,
+    inset rgba(252,255,255,.7) 0 3px 8px,
+    rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.task-title__modal-label, .task-price__modal-label {
+    color: #624DD6;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 0 rgb(53,32,169),
+                 0px 1px 0 rgb(38,17,154),
+                 0px 2px  0 rgb(23,2,139),
+                 0px 3px 2px rgba(0,0,0,0.2),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2);  
+}
+
+.task-title__modal-input, .task-price__modal-input {
+    background-color: white;
+    padding-left: 10px;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    box-shadow:
+        inset 0 0 100px rgba(250, 249, 249, 0.2),
+        inset 0px 1px 5px #999,
+        inset 0px 2px 0px #888,
+        inset 0px 3px 0px #777,
+        inset 0px 4px 0px #666,
+        inset 0px 5px 0px #555,
+        inset 0px 6px 0px #444,
+        inset 0px 7px 0px #333,
+        inset 0px 8px 7px #001135;
+}
+
+.task-modal__button-div {
+    width: 100%;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.task-modal__save-task-button {
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #62C052;
+    letter-spacing: 1.5px;
+    color: #FCE23C;
+    text-shadow: 0px 0px 0 rgb(207,181,15),
+                 0px 1px 0 rgb(192,166,0),
+                 0px 2px  0 rgb(177,151,0),
+                 0px 3px 2px rgba(0,0,0,0.2),
+                 0px 3px 1px rgba(0,0,0,0.5),
+                 0px 0px 2px rgba(0,0,0,.2);
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    background-image: linear-gradient(-180deg, #62C052 0%, #62C052 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(8, 80, 8, 0.5), 0 -0.25rem 1.5rem 
+                                #62C052 inset, 0 0.75rem 0.5rem 
+                                 rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                                 rgb(70, 207, 123) inset;  
+}
+
+.task-modal__cancel-task-button {
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #FCE23C;
+    letter-spacing: 1.5px;
+    color: #62C052;
+    text-shadow: 0px 0px 0 rgb(54,147,37),
+                    0px 1px 0 rgb(39,132,22),
+                    0px 2px  0 rgb(24,117,7),
+                    0px 3px 2px rgba(0,0,0,0.2),
+                    0px 3px 1px rgba(0,0,0,0.5),
+                    0px 0px 2px rgba(0,0,0,.2);
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    outline: none; 
+    background-image: linear-gradient(-180deg, #FCE23C 0%, #FCE23C 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(79, 80, 8, 0.5), 0 -0.25rem 1.5rem 
+                                #FCE23C inset, 0 0.75rem 0.5rem 
+                                    rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                                    #fcf9e6 inset; 
+}
+
+.earned-modal, .lost-modal {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30px;
+    background-color: white; 
+    position: absolute;
+    top: 105px;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.earned-modal__text {
+    margin-top: 20px;
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 49px;
+    text-align: center;
+    color: #62C052;
+}
+
+.lost-modal__text {
+    margin-top: 20px;
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 49px;
+    text-align: center;
+    color: #E45151;
+}
+
+.task-page__task-list-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    
+}
+
+.task-page__task-list {
+    padding: 20px 0 0 25px;
+    margin-top: 30px;
+    height: 240px;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 -5px 5px -5px rgba(226, 226, 226, 0.5);
+}
+
+.task-page__task-list::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.task-page__task-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.task-page__task-list::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.task-item-div {
+    display:flex;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.task-item {
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #624DD6;
+    padding-top: 6px;
+    padding-bottom: 0;
+    width: 190px;
+    word-wrap: break-word;
+    text-shadow: 0px 0px 0 rgb(89,68,205),
+                 0px 1px  0 rgb(80,59,196),
+                 0px 2px 1px rgba(0,0,0,0.21),
+                 0px 2px 1px rgba(0,0,0,0.5),
+                 0px 0px 1px rgba(0,0,0,.2);
+}
+
+.task-item__remove-from-list {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.task-item__execute-task-btn {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.task-item__lose-task-btn {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 55px;
+    margin: 0;
+    padding: 0;
+}

@@ -62,18 +62,18 @@ class WishPage extends Component {
                     <p className="wish-page__header__user-name">{this.props.userName}</p>
                 </header>
 
-                <h1 className="wish-page__title">ЖЕЛАНИЯ</h1>
+                <h1 className="wish-page__title">WISHES</h1>
                 {modalIsOpen ? 
                 (<form className="wish-modal">
-                    <label className="wish-title__modal-label">НАПИШИ ЖЕЛАНИЕ:
+                    <label className="wish-title__modal-label">WRITE YOUR WISH:
                         <input value={wishTitle} type="text" className="wish-title__modal-input" onChange={this.setWishDescription}/>
                     </label>
-                    <label className="wish-price__modal-label">ЦЕНА ЖЕЛАНИЯ:
+                    <label className="wish-price__modal-label">WISH PRICE:
                         <input value={wishPrice} type="number" className="wish-price__modal-input" onChange={this.setWishPrice}/>
                     </label>
                     <div className="wish-modal__button-div">
-                        <button className="wish-modal__save-wish-button" onClick={this.saveWishToList}>СОХРАНИТЬ</button>
-                        <button className="wish-modal__cancel-wish-button" onClick={this.closeModal}>ОТМЕНА</button>
+                        <button className="wish-modal__save-wish-button" onClick={this.saveWishToList}>SAVE</button>
+                        <button className="wish-modal__cancel-wish-button" onClick={this.closeModal}>CANCEL</button>
                     </div>
                 </form>) : null
                 }
@@ -85,7 +85,7 @@ class WishPage extends Component {
                         animationData: animation
                         }}
                     />
-                    <p className="congrats-modal__text">ТВОЁ ЖЕЛАНИЕ <br />ИСПОЛНЕНО!!!</p>
+                    <p className="congrats-modal__text">YOUR WISH'S <br />COME TRUE!!!</p>
                      
 
                 </div>) : null
@@ -94,7 +94,7 @@ class WishPage extends Component {
                 <Wallet />
 
                 <div className="wish-page__add-wish-button-div">
-                    <button className="wish-page__add-wish-button" onClick={this.showModal}>ДОБАВИТЬ ЖЕЛАНИЕ</button>
+                    <button className="wish-page__add-wish-button" onClick={this.showModal}>ADD WISH</button>
                 </div>
 
                 <div className="wish-page__wish-list-div">

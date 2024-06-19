@@ -23,12 +23,12 @@ class UserProfilePage extends Component {
                     <br />
                     <p className="user-profile__wallet-sum">{wallet}</p>
                     <br />
-                    <p className="user-profile__wallet-text">монет</p>
+                    <p className="user-profile__wallet-text">coins</p>
                 </div>
 
                 <div className="user-profile-page__buttons">
-                    <button className="user-profile-page__wish-button" type="submit"><Link to="/wishlist">ЖЕЛАНИЯ</Link></button>
-                    <button className="user-profile-page__task-button" type="submit"><Link to="/tasklist">ЗАДАНИЯ</Link></button>
+                    <button className="user-profile-page__wish-button" type="submit"><Link to="/wishlist">WISHES</Link></button>
+                    <button className="user-profile-page__task-button" type="submit"><Link to="/tasklist">TASKS</Link></button>
                 </div>
             </div>
         );

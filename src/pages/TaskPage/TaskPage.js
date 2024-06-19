@@ -80,18 +80,18 @@ class TaskPage extends Component {
                     <p className="task-page__header__user-name">{this.props.userName}</p>
                 </header>
 
-                <h1 className="task-page__title">ЗАДАНИЯ</h1>
+                <h1 className="task-page__title">TASKS</h1>
                 {taskModalIsOpen ? 
                 (<form className="task-modal">
-                    <label className="task-title__modal-label">ОПИСАНИЕ ЗАДАНИЯ:
+                    <label className="task-title__modal-label">TO DO:
                         <input value={taskTitle} type="text" className="task-title__modal-input" onChange={this.setTaskTitle}/>
                     </label>
-                    <label className="task-price__modal-label">ЦЕНА ЗАДАНИЯ:
+                    <label className="task-price__modal-label">TASK COST:
                         <input value={taskPrice} type="number" className="task-price__modal-input" onChange={this.setTaskPrice}/>
                     </label>
                     <div className="task-modal__button-div">
-                        <button className="task-modal__save-task-button" onClick={this.saveTaskToList}>СОХРАНИТЬ</button>
-                        <button className="task-modal__cancel-task-button" onClick={this.closeTaskModal}>ОТМЕНА</button>
+                        <button className="task-modal__save-task-button" onClick={this.saveTaskToList}>SAVE</button>
+                        <button className="task-modal__cancel-task-button" onClick={this.closeTaskModal}>CANCEL</button>
                     </div>
                 </form>) : null
                 }
@@ -99,20 +99,20 @@ class TaskPage extends Component {
                 {earnedModalIsOpen ? 
                 (<div className="earned-modal">
                     <img src={happy} alt="" className="earned-modal__image" style={{width: '100%', height: 250, backgroundColor: 'white'}}/>
-                    <p className="earned-modal__text">ЗАРАБОТАНО {this.state.earnedTask.taskPrice} МОНЕТ!!!</p>  
+                    <p className="earned-modal__text"> {this.state.earnedTask.taskPrice} COINS EARNED!!!</p>  
                 </div>) : null
                 }
 
                 {lostModalIsOpen ? 
                     (<div className="lost-modal">
                     <img src={crying} alt="" className="lost-modal__image" style={{width: '100%'}}/>
-                    <p className="lost-modal__text">ПОТЕРЯНО {this.state.lostTask.taskPrice} МОНЕТ!!!</p>  
+                    <p className="lost-modal__text"> {this.state.lostTask.taskPrice} COINS LOST!!!</p>  
                 </div>) : null }
                 
                 <Wallet />
 
                 <div className="task-page__add-task-button-div">
-                    <button className="task-page__add-task-button" onClick={this.showTaskModal}>ДОБАВИТЬ ЗАДАНИЕ</button>
+                    <button className="task-page__add-task-button" onClick={this.showTaskModal}>ADD TASK</button>
                 </div>
 
                 <div className="task-page__task-list-div">

@@ -46,12 +46,12 @@ class MainPage extends Component {
                             onChange={this.fileUploadHandler} 
                             ref={fileInput => this.fileInput = fileInput}/>
                             {!isLoaded ? 
-                            (<button className="user-data__photo" onClick={() => this.fileInput.click()}>Выбери фото</button>) :
+                            (<button className="user-data__photo" onClick={() => this.fileInput.click()}>Select Photo</button>) :
                             (<img className="user-data__photo" src={this.state.photo} alt="name"/>)
                             }
                         </div>
-                        <input value={userName} type="text" className="user-data__user-name" onChange={this.saveUserName} placeholder="Введи имя"/>
-                        <Link to="/user"><button className="user-data__save-button" onClick={this.submitAuthForm}> Сохранить</button></Link>
+                        <input value={userName} type="text" className="user-data__user-name" onChange={this.saveUserName} placeholder="Enter Your Name"/>
+                        <Link to="/user"><button className="user-data__save-button" onClick={this.submitAuthForm}> Save</button></Link>
                     </div>
                 </div>
 

@@ -1,5 +1,5 @@
 let initialState = {
-    wallet: 150,
+    wallet: 0,
     wishList: [],
     wishItemId: 0,
     taskList: [],
@@ -75,7 +75,6 @@ export default function reducer (state = initialState, action) {
     };
 
     if (action.type === "TAKE_MONEY_FROM_WALLET") {
-        console.log(action.payload.taskPrice);
         return {
             ...state,
             wallet: state.wallet - action.payload.taskPrice

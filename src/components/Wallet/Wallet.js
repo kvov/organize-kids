@@ -8,7 +8,7 @@ class Wallet extends Component {
         return (
             <div className="wallet">
                 <img src={purse} alt="" className="wallet__image" style={{height: 210, width: 230}}/>
-                <p className="wallet__text">НАКОПЛЕНО <br /><span className="wallet__sum">{this.props.wallet}</span><br /> МОНЕТ</p>
+                <p className="wallet__text"> <br /><span className="wallet__sum">{this.props.wallet}</span><br /> COINS SAVED</p>
             </div>
         );
     }
